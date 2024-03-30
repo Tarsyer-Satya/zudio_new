@@ -1,0 +1,14 @@
+[Unit]
+Description=Zudio3 Capture Image
+
+[Service]
+ExecStartPre=/bin/sleep 5
+Type=simple
+Restart=on-failure
+RestartSec=5s
+WorkingDirectory=/home/pi/Desktop/person-counting
+ExecStart=/bin/bash capture_image_after_x_interval.sh
+
+[Install]
+WantedBy=default.target
+

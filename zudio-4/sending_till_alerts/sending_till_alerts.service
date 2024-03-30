@@ -1,0 +1,12 @@
+[Unit]
+Description= sending till alerts
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+WorkingDirectory=/home/pi/sending_till_alerts/
+ExecStart=/usr/bin/python3 sending_till_alerts.py
+
+[Install]
+WantedBy=default.target
