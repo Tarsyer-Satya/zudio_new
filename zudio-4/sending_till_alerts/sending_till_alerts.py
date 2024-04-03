@@ -12,7 +12,7 @@ logging.basicConfig(filename=LOG_FILE_PATH, level=logging.INFO, format='%(asctim
 logging.info('CODE STARTED')
 
 # Tarsyer server externalIP and Port
-url = "http://dashboard.alt1.tarsyer.com:5012/zudio_alert_server"
+url = "http://dashboard.alt1.tarsyer.com:5010/zudio_alert_server"
 logging.info(f'URL : {url}')
 
 MOVE_IMAGE = False

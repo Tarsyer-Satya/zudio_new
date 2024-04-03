@@ -2,13 +2,13 @@ import numpy as np
 import cv2
 
 # Create a black image
-image = cv2.imread('Z478_channel_no_5.jpg')
+image = cv2.imread('Z585_channel_no_1.jpg')
 
 # Define points for multiple polygons
 polygons = [
-    np.array([[96, 720], [698, 719], [309, 0],[71,6]], np.int32),  # E
-    np.array([[309, 0],[698, 719], [1052, 719],[561,115]], np.int32),  # L1
-    np.array([[561, 115], [1052, 719], [1244, 718], [756,189]], np.int32)  # L2
+    np.array([[0, 123], [0, 720], [1175, 720],[170,118]], np.int32),  # E
+    np.array([[170, 118],[1020, 621], [1195, 363],[390,41]], np.int32),  # L1
+    np.array([[390, 41], [1195, 363], [1138, 168], [643,8]], np.int32)  # L2
 ]
 
 # Reshape the points array into a 3D array with one entry for each polygon
